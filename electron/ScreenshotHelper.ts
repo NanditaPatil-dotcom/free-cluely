@@ -86,7 +86,7 @@ export class ScreenshotHelper {
       // Use Electron's desktopCapturer to get screen sources
       const sources = await desktopCapturer.getSources({
         types: ['screen'],
-        thumbnailSize: { width: 1920, height: 1080 }
+        thumbnailSize: { width: 1024, height: 1024 }
       })
 
       if (sources.length === 0) {
